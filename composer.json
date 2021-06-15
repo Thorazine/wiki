@@ -1,0 +1,29 @@
+{
+  "name": "thorazine/wiki",
+  "description": "A simple wiki",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Matthijs Openneer",
+      "email": "noreply@matthijs.openneer.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Thorazine\\Wiki\\": "src/"
+    }
+  },
+  "require": {
+    "laravel/helpers": "^1.1"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Thorazine\\Wiki\\WikiServiceProvider"
+      ],
+      "aliases": {
+        "Location": "Thorazine\\Wiki\\Facades\\WikiFacade"
+      }
+    }
+  }
+}
